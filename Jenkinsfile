@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'echo "Deploying Application"'
                 sh '''
-                kubectl --kubeconfig $KUBECONFIG_FILE apply -f httpd.yaml       
+                kubectl --kubeconfig $KUBECONFIG_FILE apply -f httpd-deploy.yaml       
                 '''
             }
         }
