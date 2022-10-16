@@ -12,6 +12,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: centos-apache
+  namespace: my-ns
   labels:
     app: apache
 spec:
@@ -37,6 +38,7 @@ metadata:
   labels:
     app: apache
   name: centos-apache
+  namespace: my-ns
 spec:
   ports:
   - port: 80
