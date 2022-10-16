@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: httpd
-        image: docker.io/centos/httpd
+        image: httpd
         ports:
         - containerPort: 80
 ---
